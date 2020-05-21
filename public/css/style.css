@@ -1,0 +1,72 @@
+.content{
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+
+/* listes des ordis */
+.ordinateurs{
+    display: flex;
+    flex-direction: column;
+
+}
+    .list-ordi{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+        .list-ordi-item{
+            height: 400px;
+            width: 400px;
+        }
+            .list-ordi-item-photo{
+                height: 380px;
+                display: flex;
+                align-items: flex-end;
+            }
+                .list-ordi-item-photo img{
+                    width: 100%;
+                }
+            .list-ordi-item-text{
+               color :rgb(44, 44, 44);
+            } 
+
+
+/*presentations des ordinateurs*/
+
+.ordinateur_presentation{
+    display: flex;
+    flex-direction: column;
+}
+    
+    .ordinateur_presentation-head{
+        display: flex;
+        align-items: center;
+    }
+
+        .ordinateur_presentation-img{
+            height: 400px;
+            width: 400px;
+            content: " ";
+            background-image: var(--image-src);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    .caracteristiques{
+        display: flex;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+        width: 600px;
+    }
+    .caracteristiques.color{
+        background-color: rgba(255, 232, 232, 1);
+        border-radius: 50px;
+    }
+        .caracteristiques .name{
+            width: 300px;
+        }
