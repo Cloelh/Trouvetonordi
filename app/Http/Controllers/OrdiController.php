@@ -22,4 +22,18 @@ class  OrdiController extends Controller
         return view('ordis.ordinateur', ['ordi' => $ordi]);
     }
 
+    public function comparateur_pro()
+    {
+//       return $this->display();
+        $ordis = Ordinateur::all();
+        return view("ordis.comparateur_pro", ["ordis" => $ordis]);
+    }
+
+
+    public function addFilters()
+    {
+        return 'ça fonctinone';
+
+    }
+
 }
