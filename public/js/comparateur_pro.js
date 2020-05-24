@@ -29,19 +29,26 @@
         });
     });
 });*/
+
 $(document).ready(function () {
+
+
     $('#listHere').hide();
 
-    $("#marque").click(function () {
+    $("#name").click(function () {
         $('#listHere').slideToggle();
-        var value = $("#marqueTxt").val();
-        document.cookie = "value ="+value;
+        var value = $("#nameTxt").val();
+        alert(value);
+        document.cookie = 'value='+value;
+
     });
 
     $("#taille").click(function () {
         $('#listHere').slideToggle();
         var value = $("#tailleTxt").val();
-        document.cookie = value + "=" +value;
+        alert(value);
+        document.cookie = 'value='+value;
+
     });
 
     /*

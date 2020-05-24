@@ -25,7 +25,7 @@ class  OrdiController extends Controller
     public function comparateur_pro()
     {
 //       return $this->display();
-        $ordis = Ordinateur::all();
+        $ordis = DB::table('ordinateur')->get();
         return view("ordis.comparateur_pro", ["ordis" => $ordis]);
     }
 

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 <?php
-    // changer la value
-/*setcookie("value", $value);
+/*setcookie("value", '');
 echo $_COOKIE['value'];*/
 
 ?>

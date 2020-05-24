@@ -19,8 +19,8 @@
 
     <div id="filters"></div>
     <br/>
-    <a href="#" id="marque">
-        <button id="marqueTxt" value="marque">Marque</button>
+    <a href="#" id="name">
+        <button id="nameTxt" value="name">Name</button>
     </a>
 
     <br/>
@@ -34,13 +34,17 @@
 
     </div>
 
+    <?php
+    $element = htmlspecialchars($_COOKIE["value"]);
+    ?>
 
     @foreach($ordis as $o)
         <div>
             <form>
-                <input type="radio" value="{{$o->marque}}">{{$o->marque}}
+                <input type="radio" value="{{$o->$element}}">{{$o->$element}}
             </form>
         </div>
     @endforeach
 
 @endsection
+
