@@ -3,6 +3,19 @@
     margin-left: 200px;
 }
 
+/* home */
+.home_list-ordis{
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.home_list-ordis img{
+    height:200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
 
 /* listes des ordis */
 .ordinateurs{
@@ -10,25 +23,25 @@
     flex-direction: column;
 
 }
-    .list-ordi{
+    .ordinateurs .list-ordi{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-        .list-ordi-item{
+        .ordinateurs .list-ordi-item{
             height: 400px;
             width: 400px;
         }
-            .list-ordi-item-photo{
+            .ordinateurs .list-ordi-item-photo{
                 height: 380px;
                 display: flex;
                 align-items: flex-end;
             }
-                .list-ordi-item-photo img{
+                .ordinateurs .list-ordi-item-photo img{
                     width: 100%;
                 }
-            .list-ordi-item-text{
+            .ordinateurs .list-ordi-item-text{
                color :rgb(44, 44, 44);
             } 
 
