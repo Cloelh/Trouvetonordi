@@ -30,7 +30,7 @@
     });
 });*/
 
-$(document).ready(function () {
+/*$(document).ready(function () {
 
 
     $('#listHere').hide();
@@ -49,7 +49,7 @@ $(document).ready(function () {
         alert(value);
         document.cookie = 'value='+value;
 
-    });
+    });*/
 
     /*
         $('#marque').click(function (e) {
@@ -112,6 +112,6 @@ $(document).ready(function () {
     //
     // });
 
-});
+// });
 
 

@@ -17,14 +17,15 @@ class  OrdiController extends Controller
         return view('ordis.ordinateurs', ['ordis' => $ordis]);
     }
 
-    public function displayone($id){
+    public function displayone($id)
+    {
         $ordi = Ordinateur::findOrFail($id);
         return view('ordis.ordinateur', ['ordi' => $ordi]);
     }
 
     public function comparateur_pro()
     {
-//       return $this->display();
+//ajouter un distinct
         $ordis = DB::table('ordinateur')->get();
         return view("ordis.comparateur_pro", ["ordis" => $ordis]);
     }
