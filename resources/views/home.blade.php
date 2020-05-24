@@ -1,5 +1,10 @@
 @extends('layouts.app')
+<?php
+    // changer la value
+/*setcookie("value", $value);
+echo $_COOKIE['value'];*/
 
+?>
 @section('content')
     <div class="content home">
         <h1>Trouve ton ordinateur</h1>
