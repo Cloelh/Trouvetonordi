@@ -1,3 +1,22 @@
-button {
-    font-size: 50px;
+.filtres {
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropdown {
+    width: 200px;
+}
+.btn{
+    margin-bottom: 10px;
+}
+
+.oneFiltre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submit {
+    width: 200px;
 }
