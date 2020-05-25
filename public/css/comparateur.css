@@ -3,17 +3,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive; !important;
+    letter-spacing: 5px;
+
 }
 
-body, input,
-button,
-select,
-optgroup,
-textarea {
-    background: purple;
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6 :hover {
+    color: #8C2CE4;
 }
 
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Righteous';
+    font-size: 1.5em;
+}
+.firstColor {
+    color: #8C2CE4;
+}
+
+.navbar-brand:hover .firstColor{
+    color: #0434EC;
+}
+
+.secondColor {
+    color: #0434EC;
+}
+
+.navbar-brand:hover .secondColor{
+    color: #8C2CE4;
+}
+
+.content, .home {
+    margin: 0;
+}
+
+/*HOME*/
+.content h1 {
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.both_sides {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.left_side {
+    width: 50%;
+    border-right: 2.5px solid black;
+    padding: 0 100px;
+    text-align: center;
+}
+.home_list-ordis {
+    display: flex;
+    justify-content: center;
+}
+
+.right_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border-left: 2.5px solid black;
+    padding: 0 100px;
+    text-align: center;
+
+
+}
+
+/*FIN HOME*/
 
 .filtres {
     margin: 20px;
@@ -24,6 +90,7 @@ textarea {
 .dropdown {
     width: 200px;
 }
+
 
 .btn {
     margin-bottom: 10px;
