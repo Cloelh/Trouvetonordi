@@ -18,7 +18,10 @@ echo $_COOKIE['value'];*/
             @endforeach
         </div>
 
-        <h2 class="comparaison">Troucer son ordi</h2>
+        <h2 class="comparaison">Trouver son ordi</h2>
+        <div>
+            <a href="/comparateurPro">Comparateur pro</a>
+        </div>
     </div>
 
 @endsection

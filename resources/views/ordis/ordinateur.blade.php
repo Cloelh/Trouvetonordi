@@ -20,7 +20,7 @@
         <div class="fichetech">
 		    <div class="caracteristiques color">
                 <div class="name">Marque</div>
-                <div class="valeur">{{$ordi->idMarque}}</div>
+                <div class="valeur">{{$ordi->marque->name}}</div>
             </div>
 		<div class="caracteristiques">
 			<div class="name">Ecran</div>
@@ -73,6 +73,15 @@
 				<p>{{$ordi->sd}} {{$ordi->sd <= 1  ? "port" : "ports"}} Sd</p>
 				<p>{{$ordi->microsd}} {{$ordi->microsd <= 1  ? "port" : "ports"}} Microsd</p>
 			</div>
+		</div>
+
+
+		<h3>L'acheter au meilleur prix?</h3>
+		<div>
+			@foreach($ordi->vendeurs as $v)
+				<a href="{{$v->pivot->url}}">{{$v->name}}</a>
+				- {{$v->pivot->prix}}€</br>
+			@endforeach
 		</div>
 	</div>
 

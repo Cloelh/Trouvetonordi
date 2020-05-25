@@ -2,7 +2,15 @@
 
 @section('content')
     <div class="content ajoutOrdi">
-        <h1>Ajouter un ordinateur</h1>
+        <h1>Modifier {{$ordi->name}}</h1>
+
+        <p contenteditable="">{{$ordi->name}}</p>
+        <form id="overviewform" action="POST" action="/modif/{{$ordi->id}}">
+            @csrf
+            <input type="hidden" name="overview"/>
+            <input type="submit" value="modifier le nom" class="btn btn-success">
+        </form>
+        
 
         <form class="ordi_form" method="POST" action="/ajoutOrdi">
             @csrf
@@ -20,13 +28,7 @@
             <input type="text" class="form-control" placeholder="dalle" id="dalle" name="dalle">
             <input type="text" class="form-control" placeholder="tactile" id="tactile" name="tactile">
             <input type="text" class="form-control" placeholder="resolution" id="resolution" name="resolution">
-            
-            <select class="form-control" name="idMarque" id="idMarque">
-                @foreach($marques as $m)
-                    <option value="{{$m->id}}">{{$m->id}} - {{$m->name}}</option>
-                @endforeach
-            </select>
-
+            <input type="text" class="form-control" placeholder="idMarque" id="idMarque" name="idMarque">
             <input type="text" class="form-control" placeholder="usba" id="usba" name="usba">
             <input type="text" class="form-control" placeholder="usbc" id="usbc" name="usbc">
             <input type="text" class="form-control" placeholder="jack" id="jack" name="jack">
@@ -36,9 +38,6 @@
 
             <button type="submit" class="btn btn-primary">Enovyer</button> 
         </form>
-
-
-                
 
 
     </div>

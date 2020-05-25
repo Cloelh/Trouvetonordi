@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Ordinateur;
+use App\Marque;
 
 // AJOUT DE LA DB ICI
 use Illuminate\Support\Facades\DB;

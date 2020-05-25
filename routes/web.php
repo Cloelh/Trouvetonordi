@@ -24,6 +24,17 @@ Route::get('/compte', 'CompteController@info')->name('compte');
 Route::get('/ajoutOrdi/create', 'CompteController@ajoutOrdi')->name('compte');
 Route::post('/ajoutOrdi', 'CompteController@store')->name('compte');
 
+Route::get('/modif/update/{id}', 'CompteController@modifOrdi')->name('modif');
+
+Route::get('/addAchat/create/{id}', 'CompteController@addAchat')->name('compte');
+Route::post('/addAchat/{id}', 'CompteController@storeAchat');
+
+Route::get('addVendeur/create', 'CompteController@addVendeur');
+Route::post('addVendeur', 'CompteController@storeVendeur');
+
+Route::get('addMarque/create', 'CompteController@addMarque');
+Route::post('addMarque', 'CompteController@storeMarque');
+
 
 Auth::routes();
 

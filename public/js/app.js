@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -49846,3 +49847,10 @@ module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/Trouvetonordi
 /***/ })
 
 /******/ });
+=======
+$(document).ready(function(){
+    //modif overview
+
+    $('#overviewform button').hide();
+})
+>>>>>>> 477a4f7d90fe399d0fa967ded188ba645c4a411b
