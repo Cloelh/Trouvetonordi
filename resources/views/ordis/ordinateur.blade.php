@@ -10,7 +10,7 @@
             </div>
             <div class="ordinateur_presentation-desc">
                 <ul>
-{{--                    <li>{{$ordi->marque->name}}</li>--}}
+               		<li>{{$ordi->marque->name}}</li>
                     <li>{{$ordi->processeur}}</li>
                     <li>{{$ordi->taille}} pouce</li>
                     <a href="#fichetech" class="btn btn-outline-success">Fiche technique</a>
@@ -20,7 +20,7 @@
         <div class="fichetech">
 		    <div class="caracteristiques color">
                 <div class="name">Marque</div>
-{{--                <div class="valeur">{{$ordi->marque->name}}</div>--}}
+                <div class="valeur">{{$ordi->marque->name}}</div>
             </div>
 		<div class="caracteristiques">
 			<div class="name">Ecran</div>
