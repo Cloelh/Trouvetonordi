@@ -13,9 +13,12 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    {{--    <!-- Fonts -->--}}
+    {{--    <link rel="dns-prefetch" href="//fonts.gstatic.com">--}}
+    {{--    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">--}}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -83,8 +86,5 @@
 <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 <script src="{{ asset('js/comparateur_pro.js') }}"></script>
 <script src="{{ asset('js/toggle.js') }}"></script>
-{{--<script>
-    document.cookie = 'value = value';
-</script>--}}
 </body>
 </html>

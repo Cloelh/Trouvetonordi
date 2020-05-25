@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+body, input,
+button,
+select,
+optgroup,
+textarea {
+    background: purple;
+}
+
+
 .filtres {
     margin: 20px;
     display: flex;
@@ -7,7 +24,8 @@
 .dropdown {
     width: 200px;
 }
-.btn{
+
+.btn {
     margin-bottom: 10px;
 }
 
@@ -20,3 +38,4 @@
 .submit {
     width: 200px;
 }
+
