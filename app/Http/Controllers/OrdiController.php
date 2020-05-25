@@ -27,7 +27,7 @@ class  OrdiController extends Controller
     public function comparateur_pro()
     {
 //ajouter un distinct
-        $ordis = DB::table('ordinateur')->get();
+        $ordis = DB::table('ordinateur')->distinct()->get();
         return view("ordis.comparateur_pro", ["ordis" => $ordis]);
     }
 
