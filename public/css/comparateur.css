@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Bebas Neue', cursive; !important;
+    font-family: 'Bebas Neue', cursive !important;
     letter-spacing: 5px;
 
 }
@@ -81,9 +81,18 @@ body {
 
 /*FIN HOME*/
 
+.comparateur_content{
+    display: flex;
+}
+
+    .comparateur_content form{
+        width: 300px;
+    }
+
 .filtres {
     margin: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
@@ -106,3 +115,12 @@ body {
     width: 200px;
 }
 
+
+
+
+
+/* flex */
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
