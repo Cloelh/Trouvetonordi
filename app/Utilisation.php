@@ -13,6 +13,10 @@ class Utilisation extends Model
          'id_utilisation', 'id_ordinateur');
     }
 
+    public function test(){
+        return $this->hasOne('App\utilisation_ordinateur', 'id_utilisation', 'id');
+    }
+
 
     public $timestamps = false;
 }

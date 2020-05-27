@@ -47,7 +47,7 @@ Route::get('/comparateurPro', 'OrdiController@comparateur_pro')->name('ordi');
 Route::get('/addFilters', 'OrdiController@addFilters');
 
 Route::get('/comparateurFast', 'OrdiController@comparateur_fast')->name('ordi');
-Route::get('/trouvefast', 'OrdiController@result_fast');
+Route::get('/trouvefast', 'OrdiController@test');
 
 Route::get('/test', 'TestController@helloWorld');
 

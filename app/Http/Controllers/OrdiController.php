@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Ordinateur;
 use App\Marque;
 use App\Utilisation;
+use App\Utilisation_ordinateur;
 
 // AJOUT DE LA DB ICI
 use Illuminate\Support\Facades\DB;
@@ -48,8 +49,12 @@ class  OrdiController extends Controller
     public function result_fast(Request $request){
         $description = $request->input('utilisation');
         $results = DB::table('utilisation')->where('id', $description)->get();
-        $resultold = DB::table('utilisation')->get();
 
         return view("ordis.resultats_fast", ["results" => $results]);
+    }
+
+    public function test(){
+        $results = DB::table('utilisation_ordinateur')->get();
+        return view('ordis.resultats_fast', ['results' => $results]);
     }
 }
