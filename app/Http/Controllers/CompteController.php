@@ -105,4 +105,11 @@ class  CompteController extends Controller
         return view('compte.compte');
     }
 
+    public function suppOrdi($id){
+        $ordi = Ordinateur::find($id);
+        $ordi->delete();
+
+        return view('compte.compte');
+    }
+
 }

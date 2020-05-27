@@ -13,7 +13,7 @@
                     <div class="oneFiltre" id="processeurs">
                         @foreach($ordis as $o)
                             <div class="element">
-                                <input type="" name="checkbox" id="{{$o->processeur}}"
+                                <input type="checkbox" name="checkbox" id="{{$o->processeur}}"
                                     value="{{$o->processeur}}">
                                 <label for="{{$o->processeur}}">{{$o->processeur}}</label>
                             </div>
@@ -23,6 +23,20 @@
                 </div>
 
                 <div class="dropdown">
+                    <button type="button" id="processeur" class="btn">test</button>
+                    <div class="oneFiltre" id="processeurs">
+                        @foreach($ordis as $o)
+                        <div class="form-check element">
+                            <input type="radio" name="checkbox" id="{{$o->processeur}}" value="{{$o->processeur}}">
+                            <label for="{{$o->processeur}}">{{$o->processeur}}</label>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                
+
+                <!-- <div class="dropdown">
                     <button type="button" id="taille" class="btn">Taille d'écran</button>
                     <div class="oneFiltre" id="tailles">
                         @foreach($ordis as $o)
@@ -260,7 +274,7 @@
                         @endforeach
                         <button type="button" class="btn submit">Ajouter ces filtres</button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -279,6 +293,5 @@
                 </div>
         </div>
     </div>
-
 @endsection
 

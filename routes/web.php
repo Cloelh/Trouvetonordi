@@ -35,6 +35,8 @@ Route::post('addVendeur', 'CompteController@storeVendeur');
 Route::get('addMarque/create', 'CompteController@addMarque');
 Route::post('addMarque', 'CompteController@storeMarque');
 
+Route::get('suppression/{id}', 'CompteController@suppOrdi');
+
 
 Auth::routes();
 
@@ -43,3 +45,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/comparateurPro', 'OrdiController@comparateur_pro')->name('ordi');
 Route::get('/addFilters', 'OrdiController@addFilters');
+
+Route::get('/comparateurFast', 'OrdiController@comparateur_fast')->name('ordi');
+

@@ -23,7 +23,10 @@
                     <p>Tu sais exactement ce que tu veux ? Tu connais tous les composants de ton pc par coeur ?<br/>
                         Tu veux absolument un processeur en particulier ou bien même choisir ton nouveau pc en fonction
                         de caractéristiques bien particulières ?</p>
-                    <a href="/comparateurPro">Découvre la recherche approfondie</a>
+                    <a href="/comparateurPro">Découvre la recherche approfondie</a><br/><br/>
+                    <p>Les mots processeurs et carte graphique te sont inconnus ? 8Go de RAM??? G O ??? Mais tu voudrais 
+                    trouver l'ordinateur parfait pour toi !</p>
+                    <a href="/comparateurFast">Découvre la recherche simplifiée</a>
                 </div>
             </div>
         </div>

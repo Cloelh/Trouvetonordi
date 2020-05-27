@@ -38,4 +38,9 @@ class  OrdiController extends Controller
 
     }
 
+    public function comparateur_fast(){
+        $ordis = DB::table('ordinateur')->distinct()->get();
+        return view("ordis.comparateur_fast", ["ordis" => $ordis]);
+    }
+
 }
