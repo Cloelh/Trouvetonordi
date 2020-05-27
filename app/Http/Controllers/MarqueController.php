@@ -14,7 +14,8 @@ class  MarqueController extends Controller
 
     public function displayall()
     {
-        $marques = Marque::all();
+//        $marques = Marque::all();
+        $marques = Marque::orderBy('name')->get();
         return view("marque.marques", ["marques" => $marques]);
     }
 
@@ -25,6 +26,6 @@ class  MarqueController extends Controller
         return view("marque.marque", ["ordis_marque" => $ordis_marque, "marque" => $marque]);
     }
 
-    
+
 
 }

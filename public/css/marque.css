@@ -1,0 +1,40 @@
+/*MARQUES*/
+
+.marques {
+    width: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.marques h2 {
+    background: rgba(140, 44, 228, 0.5);
+}
+
+/*MARQUE SEULE*/
+.ordisMarque .list-ordi-item {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.ordisMarque .list-ordi-item-photo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.ordisMarque img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.ordisMarque .list-ordi-item-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-left: -100px;
+}
