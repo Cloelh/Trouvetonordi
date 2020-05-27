@@ -13,7 +13,7 @@
                     <div class="oneFiltre" id="processeurs">
                         @foreach($ordis as $o)
                             <div class="element">
-                                <input type="checkbox" name="checkbox" id="{{$o->processeur}}"
+                                <input type="" name="checkbox" id="{{$o->processeur}}"
                                     value="{{$o->processeur}}">
                                 <label for="{{$o->processeur}}">{{$o->processeur}}</label>
                             </div>

@@ -43,3 +43,9 @@
     </div>
 
 @endsection
+
+    <script type="text/javascript">
+        Alert('test');
+    </script>
+
+@endsection
