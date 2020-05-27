@@ -19,14 +19,31 @@ h1 {
     margin: auto;
 }
 
+.unOrdi:hover a{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #8C2CE4;
+}
+
 .nameOrdi {
     text-align: center;
     margin-top: 20px;
+}
+.photoOrdi {
+    width: 300px;
+    height: 300px;
 }
 
 .photoOrdi img {
     width: 300px;
     display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.nameOrdi, .photoOrdi {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: auto;
 }

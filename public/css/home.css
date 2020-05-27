@@ -1,0 +1,158 @@
+.content h1 {
+    text-align: center;
+    margin: auto;
+    width: 100vh;
+}
+
+h3 {
+    width: 100%;
+    margin: 0 auto 10px auto;
+}
+
+.home_list-ordis {
+    margin: 0;
+    padding: 0;
+}
+
+.home_list-ordis img {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.both_sides {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.left_side {
+    width: 50%;
+    border-right: 2.5px solid black;
+    padding: 25px 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left_side:hover {
+    background: rgba(140, 44, 228, 0.5);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.home_list-ordis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 110px;
+}
+
+.list-ordi-item-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.btnOrdis {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+.btnOrdis .btn {
+    display: inline;
+    background: rgba(4, 52, 236, 0.2);
+}
+
+.btnOrdis .btn:hover {
+    background: #0434EC;
+    color: white;
+    text-decoration: underline white;
+}
+
+.right_side {
+    /*background: lightslategrey;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    border-left: 2.5px solid black;
+    padding: 25px 50px;
+    text-align: center;
+}
+
+.right_side:hover {
+    background: rgba(4, 52, 236, 0.5);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.centerRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    height: 100%;
+}
+
+.noobEmoji, .proEmoji {
+    font-size: 3em;
+    padding-right: 40px;
+}
+
+.compaFast {
+    display: flex;
+    justify-content: center;
+}
+
+.compaPro {
+    display: flex;
+    justify-content: center;
+}
+
+.noobEmoji ul li {
+    list-style-type: "\2754";
+    margin-left: 10px;
+}
+
+
+.noobEmoji ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proEmoji ul li {
+    list-style-type: "\1F4BB";
+    margin-left: 10px;
+}
+
+.proEmoji ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    font-size: 0.9em;
+}
+
+.right_side .btn {
+    display: inline;
+    background: rgba(140, 44, 228, 0.2);
+}
+
+.right_side .btn:hover {
+    background: #8C2CE4;
+    color: white;
+    text-decoration: underline white;
+}

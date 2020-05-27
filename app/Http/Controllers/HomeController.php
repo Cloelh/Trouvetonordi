@@ -26,7 +26,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $ordis = DB::table('ordinateur')->get();
+        $ordis = DB::table('ordinateur')->limit(2)->get();
         return view('home', ['ordis' => $ordis]);
     }
 }
