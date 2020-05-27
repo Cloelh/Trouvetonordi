@@ -128,3 +128,39 @@ body {
     flex-wrap: wrap;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style cloé  */
+.comparateur_fast{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz{
+    display:flex;
+    flex-direction:column;
+    width: 1000px;
+}
+
+.quiz select{
+    margin-bottom: 40px;
+}
