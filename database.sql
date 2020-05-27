@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le :  mer. 27 mai 2020 à 08:31
+-- Généré le :  mer. 27 mai 2020 à 08:38
 -- Version du serveur :  5.7.25
 -- Version de PHP :  7.3.1
 
@@ -44,42 +44,20 @@ INSERT INTO `achats` (`id`, `id_ordinateur`, `id_vendeur`, `prix`, `url`) VALUES
 (20, 11, 2, 3540, 'https://www.darty.com/nav/achat/informatique/ordinateur_portable-portable/portable/asus_griffin-gz75_1.html'),
 (21, 12, 4, 1499, 'https://www.apple.com/fr/shop/buy-mac/macbook-pro/13-pouces-gris-sid%C3%A9ral-processeur-quadric%C5%93ur-%C3%A0-1,4-ghz-(turbo-boost-jusqu%E2%80%99%C3%A0-3,9-ghz)-256go#');
 
---
--- Index pour les tables déchargées
---
+-- --------------------------------------------------------
 
 --
--- Index pour la table `achats`
---
-ALTER TABLE `achats`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
+-- Structure de la table `failed_jobs`
 --
 
---
--- AUTO_INCREMENT pour la table `achats`
---
-ALTER TABLE `achats`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
-
-
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Hôte : localhost:8889
--- Généré le :  mer. 27 mai 2020 à 08:31
--- Version du serveur :  5.7.25
--- Version de PHP :  7.3.1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
---
--- Base de données :  `newLaravel`
---
+CREATE TABLE `failed_jobs` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
+  `failed_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -107,42 +85,32 @@ INSERT INTO `marque` (`id`, `name`, `url`) VALUES
 (7, 'Chromebook', 'https://www.google.fr/chromebook/'),
 (8, 'Acer', 'https://www.acer.com/ac/fr/FR/content/home');
 
---
--- Index pour les tables déchargées
---
+-- --------------------------------------------------------
 
 --
--- Index pour la table `marque`
---
-ALTER TABLE `marque`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
+-- Structure de la table `migrations`
 --
 
---
--- AUTO_INCREMENT pour la table `marque`
---
-ALTER TABLE `marque`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
-
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Hôte : localhost:8889
--- Généré le :  mer. 27 mai 2020 à 08:32
--- Version du serveur :  5.7.25
--- Version de PHP :  7.3.1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+CREATE TABLE `migrations` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `batch` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Base de données :  `newLaravel`
+-- Déchargement des données de la table `migrations`
 --
+
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2019_08_19_000000_create_failed_jobs_table', 1),
+(4, '2020_05_20_194143_ordinateur', 1),
+(5, '2020_05_21_062424_vendeurs', 1),
+(6, '2020_05_21_062528_achats', 1),
+(7, '2020_05_21_062651_utilisation', 1),
+(8, '2020_05_21_062721_utilisation_ordinateur', 1),
+(9, '2020_05_21_075612_marque', 1);
 
 -- --------------------------------------------------------
 
@@ -191,42 +159,41 @@ INSERT INTO `ordinateur` (`id`, `photo`, `name`, `processeur`, `taille`, `poids`
 (11, 'https://image.darty.com/informatique/ordinateur_portable-portable/portable/asus_griffin-gz75_1_s1901214644476A_123734189.jpg', 'ASUS GRIFFIN-GZ755GX-E507', 'Intel® Core™ i7-8750H', '17.30', 5, 1000, 512, 'NVIDIA GeForce RTX 2080', NULL, 16, 'Windows 10', '', NULL, '1920 x 1080', 5, 2, 1, 1, 1, 1, NULL),
 (12, 'https://www.iphon.fr/app/uploads/2020/05/macbook-pro-2020-13-pouces-apple-1.jpg', 'MacBook Pro 13\"', 'Intel Core i5 quadricœur de 8e génération', '13.30', 1, NULL, 256, 'Intel Iris Plus Graphics 645', 10, 8, 'macOs', 'Retina', NULL, '2 560 x 1 600', 3, NULL, 4, 1, NULL, NULL, NULL);
 
---
--- Index pour les tables déchargées
---
+-- --------------------------------------------------------
 
 --
--- Index pour la table `ordinateur`
---
-ALTER TABLE `ordinateur`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
+-- Structure de la table `password_resets`
 --
 
---
--- AUTO_INCREMENT pour la table `ordinateur`
---
-ALTER TABLE `ordinateur`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+CREATE TABLE `password_resets` (
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Hôte : localhost:8889
--- Généré le :  mer. 27 mai 2020 à 08:32
--- Version du serveur :  5.7.25
--- Version de PHP :  7.3.1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+-- --------------------------------------------------------
 
 --
--- Base de données :  `newLaravel`
+-- Structure de la table `users`
 --
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `email_verified_at` timestamp NULL DEFAULT NULL,
+  `password` varchar(255) NOT NULL,
+  `remember_token` varchar(100) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'admin', 'admin@admin.fr', NULL, '$2y$10$LXyYEIYZmOXd13MFjEoBNOVipoW2ElOCrSAFFQK8e8u9nTG40S0KC', 'LO2bWhdDID6BLgTMqWqb2yrybLV2LHQZz3dLbO5FDOFS3kPoKo5ecwN5637a', '2020-05-25 10:50:34', '2020-05-25 10:50:34');
 
 -- --------------------------------------------------------
 
@@ -250,42 +217,17 @@ INSERT INTO `utilisation` (`id`, `description`) VALUES
 (4, 'Je me sers de mon ordinateur pour programmer, ma vie c\'est de voir défiler des lignes de code toute la journée.'),
 (5, 'Un micro, une guitare, un piano, ma voix, mon pc. Voilà ce qui me porte. Je fais de la musique du matin au soir et du soir au matin (mes voisins m\'aiment pour cela d\'ailleurs). Mon ordinateur enregistre ma voix et je compose grâce à une carte son externe.');
 
---
--- Index pour les tables déchargées
---
+-- --------------------------------------------------------
 
 --
--- Index pour la table `utilisation`
---
-ALTER TABLE `utilisation`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
+-- Structure de la table `utilisation_ordinateur`
 --
 
---
--- AUTO_INCREMENT pour la table `utilisation`
---
-ALTER TABLE `utilisation`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
-
--- phpMyAdmin SQL Dump
--- version 4.8.5
--- https://www.phpmyadmin.net/
---
--- Hôte : localhost:8889
--- Généré le :  mer. 27 mai 2020 à 08:32
--- Version du serveur :  5.7.25
--- Version de PHP :  7.3.1
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
---
--- Base de données :  `newLaravel`
---
+CREATE TABLE `utilisation_ordinateur` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `id_ordinateur` int(11) NOT NULL,
+  `id_utilisation` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -314,6 +256,60 @@ INSERT INTO `vendeurs` (`id`, `name`) VALUES
 --
 
 --
+-- Index pour la table `achats`
+--
+ALTER TABLE `achats`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `marque`
+--
+ALTER TABLE `marque`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `ordinateur`
+--
+ALTER TABLE `ordinateur`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`(250));
+
+--
+-- Index pour la table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `utilisation`
+--
+ALTER TABLE `utilisation`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `utilisation_ordinateur`
+--
+ALTER TABLE `utilisation_ordinateur`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `vendeurs`
 --
 ALTER TABLE `vendeurs`
@@ -322,6 +318,54 @@ ALTER TABLE `vendeurs`
 --
 -- AUTO_INCREMENT pour les tables déchargées
 --
+
+--
+-- AUTO_INCREMENT pour la table `achats`
+--
+ALTER TABLE `achats`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT pour la table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `marque`
+--
+ALTER TABLE `marque`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT pour la table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT pour la table `ordinateur`
+--
+ALTER TABLE `ordinateur`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT pour la table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT pour la table `utilisation`
+--
+ALTER TABLE `utilisation`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT pour la table `utilisation_ordinateur`
+--
+ALTER TABLE `utilisation_ordinateur`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT pour la table `vendeurs`
