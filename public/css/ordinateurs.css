@@ -1,0 +1,90 @@
+/*LES ORDIS*/
+h1 {
+    text-align: center;
+}
+
+.gridOrdis {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-template-rows: auto;
+    margin: auto;
+}
+
+.unOrdi {
+    /*width: 80%;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.nameOrdi {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.photoOrdi img {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/*UN ORDI*/
+
+.ordinateur {
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ordinateur_presentation-img {
+    height: 300px;
+    width: 300px;
+    content: " ";
+    background-image: var(--image-src);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: -50px;
+}
+
+.caracteristiquesImportantes {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-left: -200px;
+}
+
+.ordisEmoji {
+    list-style-type: "\1F4BB";
+}
+
+.padEmoji  {
+    padding-left: 10px;
+}
+
+
+.gridCaracteristiques {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-rows: auto;
+    margin: auto;
+}
+
+.name {
+    text-align: right;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

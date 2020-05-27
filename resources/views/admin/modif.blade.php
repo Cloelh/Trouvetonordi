@@ -48,4 +48,3 @@
         Alert('test');
     </script>
 
-@endsection

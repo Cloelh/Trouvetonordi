@@ -27,7 +27,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/comparateur.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/test.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/ordinateurs.css') }}" rel="stylesheet">
 
     </head>
 <body>

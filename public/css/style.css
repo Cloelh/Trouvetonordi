@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', cursive !important;
+    letter-spacing: 5px;
+
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-family: 'Righteous';
+    font-size: 1.5em;
+}
+.firstColor {
+    color: #8C2CE4;
+}
+
+.navbar-brand:hover .firstColor{
+    color: #0434EC;
+}
+
+.secondColor {
+    color: #0434EC;
+}
+
+.navbar-brand:hover .secondColor{
+    color: #8C2CE4;
+}
+
+.content, .home {
+    margin: 0;
+}
+
+
 .content{
     margin-right: 200px;
     margin-left: 200px;
@@ -43,7 +83,7 @@
                 }
             .ordinateurs .list-ordi-item-text{
                color :rgb(44, 44, 44);
-            } 
+            }
 
 
 /*presentations des ordinateurs*/
@@ -52,21 +92,12 @@
     display: flex;
     flex-direction: column;
 }
-    
+
     .ordinateur_presentation-head{
         display: flex;
         align-items: center;
     }
 
-        .ordinateur_presentation-img{
-            height: 400px;
-            width: 400px;
-            content: " ";
-            background-image: var(--image-src);
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
 
     .caracteristiques{
         display: flex;
