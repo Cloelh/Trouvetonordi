@@ -48,3 +48,6 @@ Route::get('/addFilters', 'OrdiController@addFilters');
 
 Route::get('/comparateurFast', 'OrdiController@comparateur_fast')->name('ordi');
 
+Route::get('/test', 'TestController@helloWorld');
+
+

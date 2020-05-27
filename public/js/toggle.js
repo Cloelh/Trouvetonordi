@@ -96,13 +96,5 @@ $(document).ready(function(){
         $('#microsds').slideToggle();
     });
 
-    $('#poids').click(function() {
-        $('#poidss').slideToggle();
-    });$('#poids').click(function() {
-        $('#poidss').slideToggle();
-    });$('#poids').click(function() {
-        $('#poidss').slideToggle();
-    });$('#poids').click(function() {
-        $('#poidss').slideToggle();
-    });
+
 });

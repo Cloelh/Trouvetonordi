@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Trouvetonordi.com') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/appbis.js') }}" defer></script>
 
     <!-- bootstrapp -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -27,6 +27,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/comparateur.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/test.css') }}" rel="stylesheet">
 
     </head>
 <body>
@@ -85,8 +86,9 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/appbis.js') }}"></script>
 <script src="{{ asset('js/comparateur_pro.js') }}"></script>
 <script src="{{ asset('js/toggle.js') }}"></script>
+<script src="{{ asset('js/test.js') }}"></script>
 </body>
 </html>
