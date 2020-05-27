@@ -43,3 +43,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/comparateurPro', 'OrdiController@comparateur_pro')->name('ordi');
 Route::get('/addFilters', 'OrdiController@addFilters');
+
+Route::get('/test', 'TestController@helloWorld');
+
+

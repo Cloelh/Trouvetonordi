@@ -31,8 +31,3 @@ const app = new Vue({
     el: '#app',
 });
 
-$(document).ready(function(){
-    //modif overview
-
-    $('#overviewform button').hide();
-})

@@ -10,7 +10,7 @@
             <input type="hidden" name="overview"/>
             <input type="submit" value="modifier le nom" class="btn btn-success">
         </form>
-        
+
 
         <form class="ordi_form" method="POST" action="/ajoutOrdi">
             @csrf
@@ -36,7 +36,7 @@
             <input type="text" class="form-control" placeholder="sd" id="sd" name="sd">
             <input type="text" class="form-control" placeholder="microsd" id="microsd" name="microsd">
 
-            <button type="submit" class="btn btn-primary">Enovyer</button> 
+            <button type="submit" class="btn btn-primary">Enovyer</button>
         </form>
 
 
