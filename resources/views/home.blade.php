@@ -6,7 +6,7 @@
 
         <div class="both_sides">
             <div class="left_side">
-                <h2>Découvre nos ordinateurs :</h2>
+                <h3>Découvre nos ordinateurs :</h3>
                 <div class="home_list-ordis">
                     @foreach($ordis as $o)
                         <a href="/ordinateur/{{$o->id}}" class="list-ordi-item">
@@ -15,18 +15,45 @@
                         </a>
                     @endforeach
                 </div>
+                <a href="/ordinateur" class="btnOrdis">
+                    <button class="btn">Tous les ordinateurs</button>
+                </a>
             </div>
 
             <div class="right_side">
-                <h2 class="comparaison">Recherche approfondie :</h2>
-                <div>
-                    <p>Tu sais exactement ce que tu veux ? Tu connais tous les composants de ton pc par coeur ?<br/>
-                        Tu veux absolument un processeur en particulier ou bien même choisir ton nouveau pc en fonction
-                        de caractéristiques bien particulières ?</p>
-                    <a href="/comparateurPro">Découvre la recherche approfondie</a><br/><br/>
-                    <p>Les mots processeurs et carte graphique te sont inconnus ? 8Go de RAM??? G O ??? Mais tu voudrais 
-                    trouver l'ordinateur parfait pour toi !</p>
-                    <a href="/comparateurFast">Découvre la recherche simplifiée</a>
+                <h3>Recherche un ordinateur :</h3>
+                <div class="centerRight">
+                    <div class="compaFast">
+                        <div class="noobEmoji">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="para">
+                            <p>Les mots processeurs et carte graphique te sont inconnus ? Tu sais juste qu'il te faut un
+                                ordinateur pour faire ça ou ci ? Alors tu es exactement au bon endroit !</p>
+                            <a href="/comparateurFast">
+                                <button class="btn">Découvre la recherche simplifiée</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="compaPro">
+                        <div class="proEmoji">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="para">
+                            <p>Tu sais exactement ce que tu veux ? Tu connais tous les composants de ton pc par coeur
+                                ?<br/>
+                                Tu veux absolument un processeur en particulier ou bien même choisir ton nouveau pc en
+                                fonction
+                                de caractéristiques bien particulières ?</p>
+                            <a href="/comparateurPro">
+                                <button class="btn">Découvre la recherche approfondie</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
