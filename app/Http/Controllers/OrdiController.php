@@ -47,7 +47,8 @@ class  OrdiController extends Controller
 
     public function result_fast(Request $request){
         $description = $request->input('utilisation');
-        $results = DB::table('utilisation')->where('id', '$description')->get();
+        $results = DB::table('utilisation')->where('id', $description)->get();
+        $resultold = DB::table('utilisation')->get();
 
         return view("ordis.resultats_fast", ["results" => $results]);
     }

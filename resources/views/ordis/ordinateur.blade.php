@@ -54,9 +54,12 @@
                 <p>{{$ordi->sd}} {{$ordi->sd <= 1  ? "port" : "ports"}} SD</p>
                 <p>{{$ordi->microsd}} {{$ordi->microsd <= 1  ? "port" : "ports"}} Micro SD</p>
             </div>
-
-
         </div>
+
+        @foreach($ordi->vendeurs as $v)
+			<a href="{{$v->pivot->url}}">{{$v->name}}</a>
+			{{$v->pivot->prix}}
+		@endforeach
     </div>
 
 @endsection
