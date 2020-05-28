@@ -46,15 +46,8 @@ class  OrdiController extends Controller
         return view("ordis.comparateur_fast", ["ordis" => $ordis, "utilisation" => $utilisation]);
     }
 
-    public function result_fast(Request $request){
-        $description = $request->input('utilisation');
-        $results = DB::table('utilisation')->where('id', $description)->get();
-
+    public function result_fast($id){
+        $results = Utilisation::findOrFail($id);
         return view("ordis.resultats_fast", ["results" => $results]);
-    }
-
-    public function test(){
-        $results = DB::table('utilisation_ordinateur')->get();
-        return view('ordis.resultats_fast', ['results' => $results]);
     }
 }
