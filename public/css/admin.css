@@ -1,0 +1,98 @@
+.compte {
+    width: 80%;
+    margin: auto;
+}
+
+.compte h1 {
+    margin-bottom: 20px;
+}
+
+.logout {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    margin-right: 0;
+}
+
+
+.addList {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.changeOrdi {
+    /*background: #000;*/
+}
+
+.changeOrdi h5 {
+    margin-bottom: 5px;
+}
+
+.changeOrdi img {
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.changeOrdi .unOrdiAdmin {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: -50px;
+
+}
+
+.changeOrdi .btnSupp {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    background: #0434EC;
+    border: 0;
+    padding: 10px 30px;
+}
+
+.changeOrdi .btnSupp:hover {
+    background: #8C2CE4;
+    border: #8C2CE4;
+}
+
+.changeOrdi .leftOrdiAdmin {
+    /*background: salmon;*/
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.changeOrdi .rightOrdiAdmin {
+    /*background: #000;*/
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.changeOrdi .rightOrdiAdmin a {
+    margin-bottom: 10px;
+}
+
+.changeOrdi .hr {
+    border-top: 2px solid #8C2CE4;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
