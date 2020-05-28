@@ -12,10 +12,15 @@
         <ul>
             @foreach($results->ordinateur as $o)
                 <li>
-                    <a href="{{$o->url}}"> {{-- ICI Y'A LE LIEN A REMETTRE--}}
+                    <a href="/ordinateur/{{$o->id}}">
                         <img src="{{$o->photo}}"/>
                         <div class="nameOfPC">
-                            {{$o->name}}
+                            <p>{{$o->name}}</p>
+                            @foreach($o->vendeurs as $v)
+                            <div @if ($loop->first) class="hidden" @endif>
+                                <p>{{$v->pivot->prix}}€</p>
+                            </div>
+                            @endforeach
                         </div>
                     </a>
                 </li>
