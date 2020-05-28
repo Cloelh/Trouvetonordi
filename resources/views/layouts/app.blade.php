@@ -30,6 +30,7 @@
     <link href="{{ asset('css/ordinateurs.css') }}" rel="stylesheet">
     <link href="{{ asset('css/home.css') }}" rel="stylesheet">
     <link href="{{ asset('css/marque.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/comparateurFast.css') }}" rel="stylesheet">
 
     </head>
 <body>

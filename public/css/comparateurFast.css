@@ -1,0 +1,85 @@
+/*COMPARATEUR */
+
+.comparateur_fast {
+    width: 80%;
+    margin: auto;
+    background: rgba(140, 44, 228, 0.2);
+    display: grid;
+    grid-template-columns: 0.5fr 6fr;
+    grid-row-gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.paragraphe {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.comparateur_fast ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-left: 0;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.comparateur_fast ul li {
+    list-style-type: "\1F4BB";
+    font-size: 1.5em;
+}
+
+.comparateur_fast #bottomArrow {
+    content: '\1F4BB';
+}
+
+.txtDesc a {
+    color: black;
+}
+
+.txtDesc a:hover {
+    color: #0434EC;
+}
+
+
+/*RESULTATS */
+
+.resultats_fast {
+    /*background: #000;*/
+    width: 80%;
+    margin: auto;
+}
+
+.resultats_fast ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.resultats_fast ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.resultats_fast img {
+    max-width: 400px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.resultats_fast a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.resultats_fast .nameOfPC {
+    text-align: center;
+}
