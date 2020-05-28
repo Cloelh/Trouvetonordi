@@ -56,10 +56,15 @@
             </div>
         </div>
 
-        @foreach($ordi->vendeurs as $v)
-			<a href="{{$v->pivot->url}}">{{$v->name}}</a>
-			{{$v->pivot->prix}}
-		@endforeach
+        <div class="hr"></div>
+        <div class="vendeurs">
+            @foreach($ordi->vendeurs as $v)
+                <div class="unVendeur">
+                    <a href="{{$v->pivot->url}}">{{$v->name}}</a>
+                    : {{$v->pivot->prix}} euros
+                </div>
+            @endforeach
+        </div>
     </div>
 
 @endsection

@@ -105,3 +105,21 @@ h1 {
     justify-content: center;
 }
 
+
+.vendeurs {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hr {
+    border-top: 2px solid #8C2CE4;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
