@@ -1,5 +1,6 @@
 /*COMPARATEUR */
 
+/*
 .comparateur_fast {
     width: 80%;
     margin: auto;
@@ -10,13 +11,16 @@
     padding: 30px;
     border-radius: 10px;
 }
+*/
+
+
 
 .paragraphe {
     text-align: center;
-    margin: 20px;
+    margin: 30px auto 20px auto ;
     font-size: 1.5em;
 }
-
+/*
 .comparateur_fast ul {
     display: flex;
     flex-direction: column;
@@ -28,12 +32,52 @@
 }
 
 .comparateur_fast ul li {
-    list-style-type: "\1F4BB";
     font-size: 1.5em;
+    list-style-type : '\1F4E7';
+}*/
+
+
+.comparateur_fast{
+    width: 80%;
+    margin: auto;
+}
+
+.bothSidesOfCompa {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.rightSideTxt {
+}
+
+.rightSideTxt .txtDesc {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 10px;
+    text-align: left;
+
+}
+
+.leftSideUL ul {
+    padding-right: 20px;
+}
+
+.leftSideUL ul li {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+    font-size: 2.5em;
 }
 
 
 .txtDesc a {
+
     color: black;
 }
 
