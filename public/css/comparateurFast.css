@@ -32,9 +32,6 @@
     font-size: 1.5em;
 }
 
-.comparateur_fast #bottomArrow {
-    content: '\1F4BB';
-}
 
 .txtDesc a {
     color: black;

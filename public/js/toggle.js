@@ -96,5 +96,13 @@ $(document).ready(function(){
         $('#microsds').slideToggle();
     });
 
+    $('.btnDisabled').mouseenter(function(){
+        $('.btnDisabled').html('A DECOUVRIR PROCHAINEMENT');
+        $('.btnDisabled').mouseleave(function(){
+            $('.btnDisabled').html('Découvre la recherche approfondie');
+        })
+    });
+
+
 
 });

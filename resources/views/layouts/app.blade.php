@@ -33,7 +33,7 @@
     <link href="{{ asset('css/comparateurFast.css') }}" rel="stylesheet">
     <link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 
-    </head>
+</head>
 <body>
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
@@ -64,6 +64,9 @@
                     <li class="nav-item">
                         <a href="/marque" class="nav-link">Nos marques</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="/comparateurFast" class="nav-link">Ta recherche</a>
+                    </li>
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
@@ -78,6 +81,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/compte">{{ Auth::user()->name }}</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('logout') }}"
+                               class="nav-link" onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                                {{ __('Se déconnecter') }}
+                            </a>
+                        </li>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                     @endguest
                 </ul>
             </div>

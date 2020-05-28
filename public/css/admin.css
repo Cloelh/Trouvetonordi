@@ -55,7 +55,6 @@
     margin: 0 auto;
     background: #0434EC;
     border: 0;
-    padding: 10px 30px;
 }
 
 .changeOrdi .btnSupp:hover {
@@ -85,7 +84,7 @@
     margin-bottom: 10px;
 }
 
-.changeOrdi .hr {
+ .hr {
     border-top: 2px solid #8C2CE4;
     width: 600px;
     display: flex;
@@ -96,3 +95,19 @@
     margin-bottom: 50px;
 }
 
+
+.btnSupp {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    background: #0434EC;
+    border: 0;
+    color: white;
+}
+
+.btnSupp:hover {
+    background: #8C2CE4;
+    border: #8C2CE4;
+}

@@ -6,26 +6,29 @@
     <div class="content compte">
         <h1>{{ Auth::user()->name }}</h1>
 
-        <div class="logout">
-            <a class="dropdown-item" href="{{ route('logout') }}"
-               onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
-            </a>
-
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                @csrf
-            </form>
-
-        </div>
 
         @if (Auth::user()->name == 'admin')
 
             <div class="addList">
-                <a href='/ajoutOrdi/create'>Ajouter un ordi</a><br/><br/>
-                <a href='/addVendeur/create'>Ajouter un vendeur</a><br/><br/>
-                <a href='/addMarque/create'>Ajouter une marque</a><br/><br/>
+                <a href='/ajoutOrdi/create'>
+                    <button class="btn btnSupp">
+                        Ajouter un ordi
+                    </button>
+                </a>
+                <a href='/addVendeur/create'>
+                    <button class="btn btnSupp">
+                        Ajouter un vendeur
+                    </button>
+                </a>
+                <a href='/addMarque/create'>
+                    <button class="btn btnSupp">
+                        Ajouter une marque
+                    </button>
+                </a>
             </div>
+
+            <div class="hr"></div>
+
             <div class="changeOrdi">
                 @foreach($ordis as $o)
                     <div class="unOrdiAdmin">

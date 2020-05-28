@@ -49,9 +49,7 @@
                                 Tu veux absolument un processeur en particulier ou bien même choisir ton nouveau pc en
                                 fonction
                                 de caractéristiques bien particulières ?</p>
-                            <a href="/comparateurPro">
-                                <button class="btn">Découvre la recherche approfondie</button>
-                            </a>
+                                <button class="btn btnDisabled">Découvre la recherche approfondie</button>
                         </div>
                     </div>
                 </div>
