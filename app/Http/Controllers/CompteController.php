@@ -8,6 +8,7 @@ use App\Ordinateur;
 use App\Vendeurs;
 use App\Achats;
 use App\Marque;
+use App\Utilisation;
 
 // AJOUT DE LA DB ICI
 use Illuminate\Support\Facades\DB;
@@ -52,7 +53,8 @@ class  CompteController extends Controller
         $ordinateur->microsd=$request->input('microsd');
 
         $ordinateur->save();
-        return view('compte.compte');
+        $ordis = DB::table('ordinateur')->get();
+        return view('compte.compte', ['ordis' => $ordis]);
     }
 
     public function modifOrdi($id){
@@ -75,7 +77,26 @@ class  CompteController extends Controller
         $achat->url=$request->input('urlVendeur');
 
         $achat->save();
-        return view('compte.compte');
+        $ordis = DB::table('ordinateur')->get();
+        return view('compte.compte', ['ordis' => $ordis]);
+    }
+
+    public function addUse($id){
+        $ordi = Ordinateur::findOrFail($id);
+        $use = DB::table('utilisation')->get();
+        return view('admin.addUse', ['ordi' => $ordi, 'use' => $use]);
+    }
+
+    public function storeUse($id, REquest $request){
+        $use = new Utilisation();
+        $idOrdi = '4';
+
+        $use->id_ordinateur=$id;
+        $use->id_utilisation=$idOrdi;
+
+        $use->save();
+        $ordis = DB::table('ordinateur')->get();
+        return view('compte.compte', ['ordis' => $ordis]);
     }
 
     public function addVendeur(){
@@ -88,7 +109,8 @@ class  CompteController extends Controller
         $vendeur->name=$request->input('nomVendeur');
 
         $vendeur->save();
-        return view('compte.compte');
+        $ordis = DB::table('ordinateur')->get();
+        return view('compte.compte', ['ordis' => $ordis]);
     }
 
     public function addMarque(){
@@ -102,14 +124,16 @@ class  CompteController extends Controller
         $marque->url=$request->input('urlMarque');
 
         $marque->save();
-        return view('compte.compte');
+        $ordis = DB::table('ordinateur')->get();
+        return view('compte.compte', ['ordis' => $ordis]);
     }
 
     public function suppOrdi($id){
         $ordi = Ordinateur::find($id);
         $ordi->delete();
 
-        return view('compte.compte');
+        $ordis = DB::table('ordinateur')->get();
+        return view('compte.compte', ['ordis' => $ordis]);
     }
 
 }

@@ -18,7 +18,7 @@
                             <p>{{$o->name}}</p>
                             @foreach($o->vendeurs as $v)
                             <div @if ($loop->first) class="hidden" @endif>
-                                <p>{{$v->pivot->prix}}€</p>
+                                <p style="color:black;">A partir de {{$v->pivot->prix}}€</p>
                             </div>
                             @endforeach
                         </div>

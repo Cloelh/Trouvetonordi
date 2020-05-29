@@ -38,7 +38,7 @@
                         </div>
                         <div class="rightOrdiAdmin">
                             <a href="/addAchat/create/{{$o->id}}">Ajouter un site de vente pour cet ordinateur </a>
-                            <a href="/modif/update/{{$o->id}}">Modifier l'ordinateur</a>
+                            <a href="/addUse/create/{{$o->id}}">Ajouter une utilisation</a>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary btnSupp" data-toggle="modal"
                                     data-target="#suppression{{$o->id}}">

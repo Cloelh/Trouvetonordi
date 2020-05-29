@@ -17,6 +17,13 @@
             </div>
         </div>
 
+        <div class="utilisations">
+            <h3>Cette ordinateur est fait pour moi si : </h3>
+            @foreach($ordi->utilisations as $u)
+                <p>{{$u->description}}</p>
+            @endforeach
+        </div>
+
 
         <div class="gridCaracteristiques">
 
