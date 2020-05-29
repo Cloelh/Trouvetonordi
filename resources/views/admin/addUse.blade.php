@@ -2,12 +2,13 @@
 
 @section('content')
     <div class="content compte">
-        <h1>Ajouter une utilisation à l'ordinateur : {{$ordi->name}}</h1>
+        <h1>Ajouter une utilisation à l'ordinateur :</h1>
+            <h2>{{$ordi->name}}</h2>
 
         <div class="utilisations">
         <h4>Les utilisations déjà associées à cette ordinateur :</h4>
             @foreach($ordi->utilisations as $u)
-                <p>{{$u->id}} - {{$u->description}}</p>
+                <p>&#x1F4BB {{$u->description}}</p>
             @endforeach
         </div>
 
@@ -15,14 +16,13 @@
         <form class="use_form" method="POST" action="/addUse/{{$ordi->id}}">
         @csrf
         <div class="form-group">
-            <label for="desc">Description</label>
+            <label for="desc">Choisis la description à ajouter :</label>
             <select class="form-control" name="desc" id="desc">
             @foreach($use as $u)
-                <option value="{{$u->id}}">{{$u->id}} - {{$u->description}}</option>
+                <option value="{{$u->id}}">{{$u->description}}</option>
             @endforeach
             </select>
-
-            <input class="btn btn-success" type="submit" value="ajouter cette utilisation">
+            <input class="btn btnAdd" type="submit" value="Ajouter cette utilisation">
         </div>
         </form>
 

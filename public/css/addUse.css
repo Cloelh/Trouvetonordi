@@ -1,0 +1,33 @@
+.utilisations h4 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.compte h2 {
+    text-align: center;
+    color: #8C2CE4;
+}
+
+.btnAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+    background: #0434EC;
+    color: white;
+    margin-top: 30px;
+    margin-right: 0;
+}
+
+ .btnAdd:hover {
+    background: #8C2CE4;
+    color: white;
+    text-decoration: underline white;
+}
+
+.form-group {
+    margin-top: 50px;
+}
+
+
+
